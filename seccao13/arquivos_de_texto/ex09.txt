@@ -1,0 +1,6 @@
+agua
+cafe
+peixe
+AGUA
+CAFE
+PEIXE
