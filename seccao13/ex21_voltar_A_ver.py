@@ -49,4 +49,3 @@ with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\ex21.txt', 'w') as arquivo
     for l in range(0,len(vetorNota)):
         arquivo.write(f'{vetorNome[l]}: {vetorNota[l]}')
         # pickle.dumps('hello', arquivo)
-pickle.
