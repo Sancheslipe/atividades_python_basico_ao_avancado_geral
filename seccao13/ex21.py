@@ -1,9 +1,10 @@
-import pickle
 compNome = 40
 vetorNome = []
 vetorNota = []
 contx = 0
 conty = 0
+maiorNum = 0.0 
+maior = ''
 quantidade = input('digite quantos alunos você possui')
 if quantidade.isdigit():
     quantidade= int(quantidade)
@@ -41,11 +42,24 @@ if quantidade.isdigit():
 else:
         print('digite um numero válido')
 
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\Disciplina.txt','a') as Disciplina:
+with open(f'C:\\curso01_github\\seccao13\\arquivos_de_texto\\Disciplina.txt','w') as Disciplina:
+    
     for l in range(0,len(vetorNota)):
         Disciplina.write(f'{vetorNome[l]}: {vetorNota[l]}' + '\n')
 
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\ex21.txt', 'w') as arquivo:
-    for l in range(0,len(vetorNota)):
-        arquivo.write(f'{vetorNome[l]}: {vetorNota[l]}')
-        # pickle.dumps('hello', arquivo)
+    
+
+with open(f'C:\\curso01_github\\seccao13\\arquivos_de_texto\\Disciplina.txt', 'r') as lerArquivo:
+    lerArquivo.seek(0)
+    ler = lerArquivo.read()
+
+    array = ler.split('\n')
+    print(f'a len de array é:{len(array)}')
+    for l in range(0,(len(array))-1):
+        print(array[l])
+        if float(array[l][41::]) > float(maiorNum):
+            maiorNum = float(array[l][41::])
+            maior = array[l][0:40]
+
+with open(f'C:\\curso01_github\\seccao13\\arquivos_de_texto\\ex21.txt','w') as arquivoFinal:
+    arquivoFinal.write(f' o aluno com a maior nota é:{maior}\n e a sua nota foi:{maiorNum}')

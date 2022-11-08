@@ -22,7 +22,7 @@ while cont1 <5 :
     cont1+=1
     cont2 = 0
 
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\emp.txt','w') as arquivo:
+with open(f'C:\\Curso01_github\\seccao13\\arquivos_de_texto\\emp.txt','w') as arquivo:
     for l in range(0, cont1):
         arquivo.write(f'{profissoes[l]} : {tempoDeServico[l]} \n')
     
