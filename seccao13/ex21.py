@@ -42,21 +42,21 @@ if quantidade.isdigit():
 else:
         print('digite um numero válido')
 
-with open(f'C:\\curso01_github\\seccao13\\arquivos_de_texto\\Disciplina.txt','w') as Disciplina:
+with open(f'C:\\curso01_github\\seccao13\\arquivos_de_texto\\ex21_entrada.txt','w') as Disciplina:
     
     for l in range(0,len(vetorNota)):
         Disciplina.write(f'{vetorNome[l]}: {vetorNota[l]}' + '\n')
 
     
 
-with open(f'C:\\curso01_github\\seccao13\\arquivos_de_texto\\Disciplina.txt', 'r') as lerArquivo:
+with open(f'C:\\curso01_github\\seccao13\\arquivos_de_texto\\ex21_entrada.txt', 'r') as lerArquivo:
     lerArquivo.seek(0)
     ler = lerArquivo.read()
 
     array = ler.split('\n')
-    print(f'a len de array é:{len(array)}')
+    # print(f'a len de array é:{len(array)}')
     for l in range(0,(len(array))-1):
-        print(array[l])
+        # print(array[l])
         if float(array[l][41::]) > float(maiorNum):
             maiorNum = float(array[l][41::])
             maior = array[l][0:40]

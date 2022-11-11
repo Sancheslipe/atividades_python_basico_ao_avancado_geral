@@ -1,3 +1,4 @@
+#informações salvas no arquivo disciplina
 compNome = 40
 vetorNome = []
 vetorNota = []
@@ -5,7 +6,7 @@ contx = 0
 conty = 0
 quantidade = input('digite quantos alunos você possui')
 if quantidade.isdigit():
-    quantidade= int(quantidade)
+    quantidade = int(quantidade)
 
 
     while contx < quantidade:
@@ -39,6 +40,6 @@ if quantidade.isdigit():
 else:
         print('digite um numero válido')
 
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\Disciplina.txt','a') as Disciplina:
+with open(f'C:\\Curso01_github\\seccao13\\arquivos_de_texto\\Disciplina.txt','a') as Disciplina:
     for l in range(0,len(vetorNota)):
-        Disciplina.write(f'{vetorNome[l]}:{vetorNota[l]}' )
+        Disciplina.write(f'{vetorNome[l]}:{vetorNota[l]}\n' )

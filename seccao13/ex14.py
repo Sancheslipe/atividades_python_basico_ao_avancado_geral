@@ -17,8 +17,7 @@ idade = []
 nomeEntrada = input('Digite o nome do arquivo que você deseja criar: ')
 
 nomeSaida = input('digite o nome do arquivo que você deseja criar para a saida: ')
-
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{nomeEntrada}.txt','a+') as arquivoEntrada:
+with open(f'C:\\curso01_github\\seccao13\\arquivos_de_texto\\{nomeEntrada}.txt','a+')as arquivoEntrada:
     
     while executar == True: 
         rodar = input('se deseja adicionar mais um iten digite S, caso deseja encerrar o programa digite N: ')
@@ -61,7 +60,7 @@ with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{nomeEntrada}.txt','a+') a
     lerArquivo1 = arquivoEntrada.read()
 
 
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{nomeSaida}.txt','a+') as arquivoSaida:
+with open(f'C:\\curso01_github\\seccao13\\arquivos_de_texto\\{nomeSaida}.txt','a+')as arquivoSaida:
     linhasTotais = lerArquivo1.split('\n')
 
     for l in range(0,len(linhasTotais)-1):

@@ -30,7 +30,7 @@ while cont < 3:
         print('digite uma nota válida')
 
 
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{arquivoEntrada}.txt','a+') as arquivo:
+with open(f'C:\\Curso01_github\\seccao13\\arquivos_de_texto\\{arquivoEntrada}.txt','a+') as arquivo:
     arquivo.write(nome + '\n')
     for l in range(0,len(notas)):
         arquivo.write(f'{str(notas[l])} ')
@@ -40,7 +40,7 @@ with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{arquivoEntrada}.txt','a+'
     notas.clear()
 
 arquivoSaida = input('digite aqui o nome do arquivo de saida: ')
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{arquivoSaida}.txt','a+') as arquivoSaida:
+with open(f'C:\\Curso01_github\\seccao13\\arquivos_de_texto\\{arquivoSaida}.txt','a+') as arquivoSaida:
     ler = ler.split()
     arquivoSaida.write(ler[0] + '\n')
     for l in range(1,4):

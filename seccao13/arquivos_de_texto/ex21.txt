@@ -1,2 +1,0 @@
- o aluno com a maior nota é:felipe                                  
- e a sua nota foi:150.0

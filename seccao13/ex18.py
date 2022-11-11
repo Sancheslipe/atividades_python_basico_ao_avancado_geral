@@ -5,7 +5,7 @@ executar = True
 Rodar = ''
 nomeProduto = ''
 valorProduto = 0
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{nomeArquivo}.txt','a+') as arquivoEntrada:
+with open(f'C:\\Curso01_github\\seccao13\\arquivos_de_texto\\{nomeArquivo}.txt','a+') as arquivoEntrada:
     while executar == True:
         rodar = input('digite S para continuar a adicionar produtos e N para encerrar a sua compra: ')
         if rodar.upper() == 'S':

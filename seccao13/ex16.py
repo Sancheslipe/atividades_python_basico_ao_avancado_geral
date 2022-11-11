@@ -6,7 +6,7 @@ l = 0
 
 while l<10:
     
-    num = input(f'{l}digite um numero: ')
+    num = input(f'digite um numero: ')
     if num.isdigit():
         num = int(num)
         vetor.append(num)
@@ -21,7 +21,7 @@ while l<10:
 
 nomeArquivo = input('Digite o nome do arquivo que você deseja criar: ')
 
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{nomeArquivo}.txt','x') as arquivo:
+with open(f'C:\\curso01_github\\seccao13\\arquivos_de_texto\\{nomeArquivo}.txt','x')as arquivo:
 
     for l in range(0,len(vetorBin)):
         arquivo.write(vetorBin[l] +'\n')

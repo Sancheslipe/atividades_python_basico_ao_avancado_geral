@@ -1,3 +1,3 @@
-felipe                                  : 150.0
-raissa                                  : 10.0
-laura                                   : 20.0
+felipe                                  : 10.0
+raissa                                  : 2.0
+pedro                                   : 1.0

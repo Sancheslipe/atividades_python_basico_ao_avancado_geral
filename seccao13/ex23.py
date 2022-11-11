@@ -26,3 +26,4 @@ with open(f'C:\\Curso01_github\\seccao13\\arquivos_de_texto\\emp.txt','w') as ar
     for l in range(0, cont1):
         arquivo.write(f'{profissoes[l]} : {tempoDeServico[l]} \n')
     
+    

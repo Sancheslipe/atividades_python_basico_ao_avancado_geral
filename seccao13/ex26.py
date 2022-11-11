@@ -43,3 +43,4 @@ with open (f'C:\\curso01_github\\seccao13\\arquivos_de_texto\\alunos.txt','a') a
 
 print('arquivo finalizado')
 
+#rodando

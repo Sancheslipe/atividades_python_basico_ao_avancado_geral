@@ -8,7 +8,8 @@ colunaAnulada = 0
 cont = 0
 
 nomeArquivoEntrada = input('digite aqui o nome do arquivo que você deseja colocar as informações: ')
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{nomeArquivoEntrada}.txt','a+') as arquivo1:
+with open(f'C:\\Curso01_github\\seccao13\\arquivos_de_texto\\{nomeArquivoEntrada}.txt','a+') as arquivo1:
+
 
     linha = input('digite um numero inteiro numero referente á quantidade de linhas da matriz: ')
     if linha.isdigit(): 
@@ -60,7 +61,7 @@ with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{nomeArquivoEntrada}.txt',
 
 
 
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{nomeArquivoEntrada}.txt','r') as arquivoEntrada:
+with open(f'C:\\Curso01_github\\seccao13\\arquivos_de_texto\\{nomeArquivoEntrada}.txt','r') as arquivoEntrada:
     test = arquivoEntrada.readline()
     
 
@@ -88,7 +89,7 @@ with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{nomeArquivoEntrada}.txt',
 
 nomeSaida = input('\nDigite o nome do arquivo de saída: ')
 
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{nomeSaida}.txt','a') as arquivoSaida:
+with open(f'C:\\Curso01_github\\seccao13\\arquivos_de_texto\\{nomeSaida}.txt','a') as arquivoSaida:
 
     for l in range(0,linha):
         for c in range(0,coluna):

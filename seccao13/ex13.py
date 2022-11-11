@@ -1,9 +1,8 @@
-arquivoEntrada = input('digite o nome do arquivo que você deseja criar: ')
 executar = True
 nome = ''
 numero = ''
-
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{arquivoEntrada}.txt','a+') as arquivo:
+nomeArquivo = input('digite aqui o nome do arquivo: ')
+with open(f'C:\\curso01_github\\seccao13\\arquivos_de_texto\\{nomeArquivo}.txt','a+')as arquivo:
     while executar == True:
 
         
@@ -13,6 +12,7 @@ with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\{arquivoEntrada}.txt','a+'
         if numero != '0':
             
             arquivo.write(numero + '\n')
+            arquivo.write('\n'+'-='*20+'\n')
 
         
         else:

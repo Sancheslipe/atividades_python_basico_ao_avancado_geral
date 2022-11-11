@@ -3,9 +3,9 @@ caracTotais =''
 linhasTotais = 0
 
 
-
+nomeArquivo = input('digite aqui o nome do arquivo: ')
 #abrindo u arquivo aleatório e printando na tela quantas vezes cada letra ocorre.
-with open(f'C:\\Curso01\\seccao13\\arquivos_de_texto\\cafe.txt') as arquivo:
+with open(f'C:\\curso01_github\\seccao13\\arquivos_de_texto\\{nomeArquivo}.txt')as arquivo:
     caracTotais = arquivo.read()
     palavras = caracTotais.split( )
     linhasTotais = caracTotais.split('\n')
